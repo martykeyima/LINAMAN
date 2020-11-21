@@ -38,7 +38,7 @@ nonymous">
 	<title>Comment Form</title>
 </head>
 <body>
-  <form action = "insert.php" method = "post" id="CommentForm" >
+  <form action = "" method = "post" id="CommentForm" >
     <div class = "container">
       <div class = "row">
         <div class = "col-4">
