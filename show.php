@@ -20,7 +20,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table width="600" border="1" class = "table">
+<table width="600" border="1" class = "table table-striped">
     <thead class="thead-dark">
   <tr>
     <th width="100"> <div align="center">Name</div></th>
