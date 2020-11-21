@@ -39,10 +39,14 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+    <td><div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Change
+    </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
     <a href="edit.php?id=<?= $Result['ID']; ?>" class="btn btn-warning">Edit</a>
     <a href="delete.php?id=<?= $Result['ID']; ?>" class="btn btn-danger">Delete</a>
-    </div></td>
+    </div></div></td>
 
     <td width="50"><div align="center"><a href="form.html" class="btn btn-primary">Add</a></div></td>
   </tr>
