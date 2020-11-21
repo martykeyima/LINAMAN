@@ -40,7 +40,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
     <td></td>
-    <td><a href="form.html" class="btn btn-primary">Add</a></td>
+    <td width="50"><a href="form.html" class="btn btn-primary">Add</a></td>
   </tr>
 </tbody>
 <?php
