@@ -11,29 +11,14 @@ nonymous">
 	<title>Comment Form</title>
 </head>
 <body>
-  <form class="needs-validation" novalidate>
-    <div class="form-row">
-      <div class="col-md-4 mb-3">
-        <label for="validationTooltip01">Name</label>
-        <input type="text" name = "name" class="form-control" id="validationTooltip01" placeholder="Name!!!" required>
-        <div class="valid-tooltip">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationTooltip02">Comment</label>
-        <input type="text" name = "comment" class="form-control" id="validationTooltip02" placeholder="Comment!!!" required>
-        <div class="valid-tooltip">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="validationTooltipUsername">Link</label>
-        <input type="text" name = "link" class="form-control" id="validationTooltip03" placeholder="Link!!!" required>
-        <div class="input-group">
-          <div class="input-group-prepend">
-          </div>
-    <button class="btn btn-primary" type="submit">Submit form</button>
-  </form>
+  <form action = "insert.php" method = "post" id="CommentForm" >
+    Name:<br>
+    <input type="text" class = "form-control" name = "name" id="idName" placeholder="Enter Name"> <br>
+    Comment:<br>
+    <textarea rows="10" cols="20" class = "form-control" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
+    Link:<br>
+    <input type="text" class = "form-control" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+    <input type="submit" id="commentBtn">
+  </form> 
 </body>
 </html>
