@@ -11,6 +11,19 @@ $id = $_GET['id'];
 $result = mysqli_query($conn, "SELECT * FROM GuestBook WHERE id='$id'");
 $row=mysqli_fetch_assoc($result);
 
+if(isset($_POST['submit'])){
+    $id = $_GET['id'];
+    $Name = $_POST['name'];
+    $Comment = $_POST['comment'];
+    $Link = $_POST['link'];
+    $update = "UPDATE guestbook set Name='$Name', Comment='$Comment', Link='$Link' Where id='$id' ";
+
+    if(mysqli_query($conn, $update)){
+        header("location:show.php");
+    }
+}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +53,7 @@ nonymous">
     Link:<br>
     <input type="text" class = "form-control" name = "link" id="idLink" value="<?=$row['Link'];?>"> <br><br>
         </div>
-        <input type="submit" class="btn btn-primary" id="commentBtn">
+        <input name="submit" type="submit" class="btn btn-primary" id="commentBtn">
       </div>
     </div>
   </form> 
