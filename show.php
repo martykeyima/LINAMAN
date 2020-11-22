@@ -47,7 +47,10 @@ while($Result = mysqli_fetch_array($res))
         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
     <a class="dropdown-item" href="edit.php?id=<?= $Result['ID']; ?>">Edit</a>
     <a class="dropdown-item" href="delete.php?id=<?= $Result['ID']; ?>">Delete</a>
-    </div></div></div></td>
+    </div>
+        </div>
+        </div>
+    </td>
 
     <td width="50"><div align="center"><a href="form.html" class="btn btn-primary">Add</a></div></td>
   </tr>
