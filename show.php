@@ -45,8 +45,8 @@ while($Result = mysqli_fetch_array($res))
       Changes
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a href="delete.php?id=<?= $Result['id']; ?>" class="dropdown-item">ลบ</a>
-      <a href="edit.php?id=<?= $Result['id']; ?>" class="dropdown-item">แก้ไข</a>
+      <a href="delete.php?id=<?= $Result['ID']; ?>" class="dropdown-item">ลบ</a>
+      <a href="edit.php?id=<?= $Result['ID']; ?>" class="dropdown-item">แก้ไข</a>
     </div>
   </div>
 </div>
