@@ -39,17 +39,17 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-        <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Change
+    <td class="bg-light text-dark"><div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Changes
     </button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-    <a class="dropdown-item" href="edit.php?id=<?= $Result['ID']; ?>">Edit</a>
-    <a class="dropdown-item" href="delete.php?id=<?= $Result['ID']; ?>">Delete</a>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a href="delete.php?id=<?= $Result['id']; ?>" class="dropdown-item">ลบ</a>
+      <a href="edit.php?id=<?= $Result['id']; ?>" class="dropdown-item">แก้ไข</a>
     </div>
-        </div>
-        </div>
+  </div>
+</div>
     </td>
 
     <td width="50"><div align="center"><a href="form.html" class="btn btn-primary">Add</a></div></td>
