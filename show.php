@@ -41,10 +41,9 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Link'];?></td>
     <td><div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group" role="group" aria-label="First group">
-    <button type="button" class="btn btn-secondary">1</button>
-    <button type="button" class="btn btn-secondary">2</button>
-    <button type="button" class="btn btn-secondary">3</button>
-    <button type="button" class="btn btn-secondary">4</button>
+    <button type="button" class="btn btn-secondary">E</button>
+    <button type="button" class="btn btn-secondary">D</button>
+    <a href="form.html" class="btn btn-primary">Add</a>
   </div>
         </div>
     </td>
