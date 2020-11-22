@@ -39,7 +39,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td width = "50"><div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+    <td width = "25" align = "center"><div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group" role="group" aria-label="First group">
     <a href="edit.php?id=<?= $Result['ID']; ?>" class="btn btn-warning">Edit</a>
     <a href="delete.php?id=<?= $Result['ID']; ?>" class="btn btn-danger">Delete</a>
