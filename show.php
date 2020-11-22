@@ -41,8 +41,8 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Link'];?></td>
     <td><div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group" role="group" aria-label="First group">
+    <a href="edit.php?id=<?= $Result['ID']; ?>" class="btn btn-danger">Edit</a>
     <a href="delete.php?id=<?= $Result['ID']; ?>" class="dropdown-item">Delete</a>
-    <button type="button" class="btn btn-secondary">Delete</button>
     <a href="form.html" class="btn btn-primary">Add</a>
   </div>
         </div>
