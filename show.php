@@ -39,15 +39,14 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td class="bg-light text-dark"><div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-  <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Changes
-    </button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a href="delete.php?id=<?= $Result['ID']; ?>" class="dropdown-item">ลบ</a>
-      <a href="edit.php?id=<?= $Result['ID']; ?>" class="dropdown-item">แก้ไข</a>
-    </div>
+    <td class="bg-light text-dark"><div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
   </div>
 </div>
     </td>
