@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พาร์ทเนอร์ของเรา – LINE MAN x Wongnai</title>
+
+    <!-- ใส่ icon ของ title -->
+    <link rel="icon" href="lineman-icon.png" type="image/icon type">
+    <!-- ใส่ icon ของ title -->
+
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap 5 -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+    <link rel="stylesheet" href="chat.css">
+
+    <!-- awe -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- awe -->
+
+    <style>
+        body {
+            /* font-family: 'Montserrat', sans-serif; */
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+
+        .ques {
+            border-top: 8px solid #0fc862;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #444444;
+            text-decoration: none;
+        }
+
+
+        .top {
+            border-top: 7px solid #0fc862;
+            box-shadow: 0 1px 8px rgb(0 0 0 / 0.2);
+        }
+
+        .ques a {
+            color: #444444;
+        }
+
+        .hover:hover {
+            color: #0fc862;
+        }
+
+        /* .ques:hover a {
+            color: #0fc862;
+        } */
+
+        .footter-line a {
+            color: #777777;
+            font-size: 14px;
+        }
+
+        ::placeholder {
+            color: #777777;
+        }
+
+        .search {
+            white-space: nowrap;
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+        }
+
+        .pic {
+            position: absolute;
+            right: 300px;
+            top: 200px;
+        }
+        .b1 {
+            font-size: 14px;
+        }
+        .b2 {
+            font-size: 24px;
+        }
+        li {
+            font-size: 14px;
+        }
+        .head-2 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        hr {
+            background-color: #bbc6cb;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .pic {
+                right: 10px;
+            }
+            .b2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-start p-4 top">
+        <span class="">
+            <a href="mostques.html" title="Home"><img src="lineman-logo.png" alt="" class="img-fluid" width="114px"></a>
+        </span>
+    </div>
+
+    <!-- search -->
+    <div class="container-fluid">
+
+        <div class="d-flex justify-content-center p-3">
+            <span class="align-self-center p-3 search" style="width: 40rem;">
+                <span style="background-color: #f8f4f4; padding: 10px; border-radius: 8px;">
+                    <i class="fas fa-search" style="color: #777777;"></i> <input
+                        placeholder="ค้นหาด้วยคีเวิร์ดเช่น ลืมของ,ราคา,ยกเลิก " type="text"
+                        style="background-color: #f8f4f4; border: none; outline: none; width: 90%;">
+                </span>
+            </span>
+        </div>
+    </div>
+    <!-- search -->
+
+    <!-- box เขียว-->
+    <div style="height: 150px; background-color: #0fc862;">
+        <div class="container">
+            <div class="d-flex justify-content-start">
+                <span class="align-self-end text-white" style="padding-top: 50px;position: relative;">
+                    <b class="b1">คำถามและคำตอบของ</b> <br>
+                    <b class="b2">พาร์ทเนอร์ของเรา</b>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- box เขียว-->
+
+    <!-- box -->
+    <div style="height: 75px; border-bottom: 1px solid #bbc6cb;">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <span class="align-self-end"
+                    style="padding-top: 30px; position: relative; left: -60px; font-size:20px;">
+                    <a style="color: #444444; font-size: 13px;" href="mostques.html" title="LINE MAN x Wongnai">LINE MAN x Wongnai</a> <span
+                        style="color: #777777; font-size: 13px;"> > พาร์ทเนอร์ของเรา</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- box -->
+
+    <!-- ques -->
+    <div class="container" style="width: 1000px;">
+        <br><br><br>
+        <!-- row 1 -->
+        <div class="row gy-3">
+            <h1 style="font-size: 32px;"><b>พาร์ทเนอร์ของเรา</b></h1>
+            <div class="col-xl-6">
+                <div class="p-4 ques" style="width: 450px; height: autopx; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <a class="hover" style="font-size: 16px;" href="#"><b>คนขับแท็กซี่</b></a><br><br>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="ques_inside18.html">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                สามารถสมัครคนขับไลน์แมนแท็กซี่ได้อย่างไร
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xl-6">
+
+                <div class="p-4 ques" style="width: 450px; height: autopx; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <a class="head-2 hover" href="#">คนขับส่งอาหาร/สิ่งของ</a><br><br>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="ques_inside19.html">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                สามารถสมัครเป็นคนขับกับ LINE MAN ได้อย่างไร
+                            </a></li>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!-- row 1 -->
+
+
+        <!-- row 2 -->
+        <div class="row gy-3">
+            <div class="col-xl-6" style="width: 100%;">
+                <div class="p-4 ques" style="width: 450px; height: autopx; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <a class="head-2 hover" href="#">ร้านอาหาร</a><br><br>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="ques_inside20.html">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                สนใจเข้าร่วมโครงการค่าส่งฟรี 3 กม. แรก (LINE MAN GP) ต้องทำอย่างไร
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                สามารถนำร้านอาหารเข้าร่วมกับ LINE MAN ได้อย่างไร
+                            </a></li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- row 2 -->
+        <br>
+    
+    </div>
+    <!-- ques -->
+
+    <hr style="color: #bbc6cb;">
+
+    <!-- footter -->
+    <div class="container">
+        <div class="d-flex justify-content-between mb-3">
+            <div class="p-2">
+                <a href="mostques.html" style="color: #777777; font-size: 14px;" title="Home">
+                    LINE MAN x Wongnai
+                </a>
+            </div>
+
+            <div class="p-2">
+                <div class="dropup" style="font-size: 14px;">
+                    <button type="button" data-bs-toggle="dropdown" style="border: none; background-color: white;">
+                        English (US) <i class="fas fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">ไทย</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footter -->
+
+
+    <!-- photo -->
+    <img class="pic" src="partner.png" alt="" width="170px" height="auto">
+    <!-- photo -->
+
+    <button class="open-button" id="open-btn" onclick="openForm()"><i class="far fa-comment"
+        style="font-size: 18px;"></i>&ensp;Chat</button>
+
+<div class="chat-popup" id="myForm">
+
+    <div class="chat1">
+        <div class="d-flex justify-content-end box1"
+            style="background-color: #16c057; font-size: 15px; font-weight: bold; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <div class="align-self-center">
+                LMWN Customer Support&ensp;<a class="arrow"
+                    href="https://static.zdassets.com/web_widget/latest/liveChat.html?v=10#key=lmwn.zendesk.com&settings=JTdCJTIyd2ViV2lkZ2V0JTIyJTNBJTdCJTIyY2hhdCUyMiUzQSU3QiUyMnRpdGxlJTIyJTNBbnVsbCUyQyUyMm1lbnVPcHRpb25zJTIyJTNBJTdCJTIyZW1haWxUcmFuc2NyaXB0JTIyJTNBdHJ1ZSU3RCUyQyUyMmRlcGFydG1lbnRzJTIyJTNBJTdCJTdEJTJDJTIycHJlY2hhdEZvcm0lMjIlM0ElN0IlMjJkZXBhcnRtZW50TGFiZWwlMjIlM0FudWxsJTJDJTIyZ3JlZXRpbmclMjIlM0FudWxsJTdEJTJDJTIyb2ZmbGluZUZvcm0lMjIlM0ElN0IlMjJncmVldGluZyUyMiUzQW51bGwlN0QlMkMlMjJjb25jaWVyZ2UlMjIlM0ElN0IlMjJhdmF0YXJQYXRoJTIyJTNBbnVsbCUyQyUyMm5hbWUlMjIlM0FudWxsJTJDJTIydGl0bGUlMjIlM0FudWxsJTdEJTdEJTJDJTIyY29sb3IlMjIlM0ElN0IlMjJhcnRpY2xlTGlua3MlMjIlM0ElMjIlMjIlMkMlMjJidXR0b24lMjIlM0ElMjIlMjIlMkMlMjJoZWFkZXIlMjIlM0ElMjIlMjIlMkMlMjJsYXVuY2hlciUyMiUzQSUyMiUyMiUyQyUyMmxhdW5jaGVyVGV4dCUyMiUzQSUyMiUyMiUyQyUyMnJlc3VsdExpc3RzJTIyJTNBJTIyJTIyJTJDJTIydGhlbWUlMjIlM0FudWxsJTdEJTdEJTdE&&locale=en-us&title=Web%20Widget%20Live%20Chat"
+                    target="_blank"><i class="fas fa-location-arrow"></i></a> &ensp;<button type="button"
+                    class="btn cancel" onclick="closeForm()"><i class="far fa-window-minimize"></i></button>
+            </div>
+        </div>
+
+        <div class="support d-flex p-2">
+            <div class="align-self-center" style="font-size: 20px;">
+                <i class="fas fa-concierge-bell"></i>
+            </div>
+            &emsp;
+            <div class="align-self-center" style="font-size: 14px;">
+                <span><b>Live Support</b></span><br>Customer Support
+            </div>
+        </div>
+
+        <!-- ข้อความ -->
+        <div class="scmy" style="height: 325px; overflow: auto; padding: 10px 20px;" id="myDiv">
+
+            <div class="d-flex">
+                <div class="align-self-end" style="font-size: 30px; color: white;">
+                    <i class="fas fa-user-circle"></i>
+                </div>&emsp;
+                <div class="align-self-end box-texta"
+                    style="background-color: #e9ebed; font-size: 15px; padding-top: 5px; padding-left: 10px;padding-right: 5px;">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi ipsam, facilis quam
+                        dicta culpa, rerum esse alias aspernatur molestias perferendis! Nam recusandae officiis
+                        soluta, eos quia maxime quibusdam esse!</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="d-flex">
+                <div class="align-self-end" style="font-size: 30px; color: white;">
+                    <i class="fas fa-user-circle"></i>
+                </div>&emsp;
+                <div class="align-self-end box-texta"
+                    style="background-color: #e9ebed; font-size: 15px; padding-top: 5px; padding-left: 10px;padding-right: 5px;">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi ipsam, facilis quam
+                        dicta culpa, rerum esse alias aspernatur molestias perferendis! Nam recusandae officiis
+                        soluta, eos quia maxime quibusdam esse!</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="d-flex">
+                <div class="align-self-end" style="font-size: 30px; color: white;">
+                    <i class="fas fa-user-circle"></i>
+                </div>&emsp;
+                <div class="align-self-end box-texta"
+                    style="background-color: #e9ebed; font-size: 15px; padding-top: 5px; padding-left: 10px;padding-right: 5px;">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi ipsam, facilis quam
+                        dicta culpa, rerum esse alias aspernatur molestias perferendis! Nam recusandae officiis
+                        soluta, eos quia maxime quibusdam esse!</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="d-flex">
+                <div class="align-self-end" style="font-size: 30px; color: #777777;">
+                    <i class="fas fa-user-circle"></i>
+                </div>&emsp;
+                <div class="align-self-end box-texta"
+                    style="background-color: #e9ebed; font-size: 15px; padding-top: 5px; padding-left: 10px;padding-right: 5px;">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi ipsam, facilis quam
+                        dicta culpa, rerum esse alias aspernatur molestias perferendis! Nam recusandae officiis
+                        soluta, eos quia maxime quibusdam esse!</p>
+                </div>
+            </div>
+            <!-- ข้อความ -->
+
+
+
+        </div>
+
+        <div class="p-2 d-flex">
+            <textarea style="width: 100%; height: 70px;" class="texta p-2" placeholder="Type a message here..."
+                name="msg" required></textarea>
+        </div>
+
+        <div class="d-flex justify-content-between" style="padding: 0px 10px;">
+            <div style="font-size: 12px; color: #777777;">
+                zendesk
+            </div>
+            <div style="font-size: 12px; color: #777777;">
+                <i class="fas fa-door-open"></i>&ensp;
+                <i class="fas fa-paperclip"></i>&ensp;
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+
+        <!-- <button type="submit" class="btn">Send</button> -->
+        <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+    </div>
+
+</div>
+
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        document.getElementById("open-btn").style.display = "none";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("open-btn").style.display = "block";
+    }
+    var objDiv = document.getElementById("myDiv");
+    objDiv.scrollTop = objDiv.scrollHeight;
+
+</script>
+
+</body>
+
+</html>

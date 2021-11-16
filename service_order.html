@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE MAN | สั่งอาหารร้านเด็ดจาก 100,000 ร้าน ทั่วกรุงเทพฯ</title>
+
+    <!-- ใส่ icon ของ title -->
+    <link rel="icon" href="lineman-icon.png" type="image/icon type">
+    <!-- ใส่ icon ของ title -->
+
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap 5 -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+
+    <!-- awe -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- awe -->
+
+    <link rel="stylesheet" href="service_template.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid">
+        <div class="align-self-center navcom">
+            <nav class="navbar navbar-expand-lg">
+                <a href="#"><img src="lineman-logo.png" alt="" width="170px" class="img-fluid" title="LINEMAN"></a>
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#"><b style="font-size: 30px; color: #0fc862;">LINE MAN</b></a> -->
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html"><b>หน้าหลัก</b></a>
+                            </li>
+
+                            &emsp;&emsp;
+                            <li class="nav-item">
+                                <div class="box-before content" style="position: absolute; left: 0%; top: 50px;">
+                                    <div class="box-color" style="width: 100%;height: 40px;"></div>
+                                    <div class="content service p-4 text-center"
+                                        style="width: 990px; background-color: black;color: white;">
+                                        <a href="service_order.html"
+                                            style="color: white;"><b>สั่งอาหาร</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>เรียกแท็กซี่</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>แมสเซนเจอร์</b></a>
+                                    </div>
+                                </div>
+                                <a class="nav-link" href="#"><b><span style="color: #0fc862;" class="commy2">บริการ</span> <i
+                                            class="fas fa-angle-down"></i></b></a>
+
+                            </li>
+                            &emsp;&emsp;
+
+                            <li class="nav-item">
+                                <div class="box-before content" style="position: absolute; left: 0%; top: 50px;">
+                                    <div class="box-color" style="width: 100%;height: 40px;"></div>
+                                    <div class="content service p-4 text-center"
+                                        style="width: 990px; background-color: black;color: white;">
+                                        <a href="https://business.wongnai.com/restaurant-management-system/?ref=lm-user-website"
+                                            style="color: white;"><b>เปิดร้านอาหาร</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>สมัครขับไลน์แมน</b></a>&emsp;|&emsp;
+                                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bizdev@lmwn.com"
+                                            target="_blank" style="color: white;"><b>ร่วมเป็นพันธมิตรทางธุรกิจ</b></a>
+                                    </div>
+                                </div>
+                                <a class="nav-link" href="#"><b>พาร์ทเนอร์ <i class="fas fa-angle-down"></i></b></a>
+
+                            </li>
+                            &emsp;&emsp;
+
+                            <li class="nav-item">
+                                <div class="box-before content" style="position: absolute; left: 0%; top: 50px;">
+                                    <div class="box-color" style="width: 100%;height: 40px;"></div>
+                                    <div class="content service p-4 text-center"
+                                        style="width: 990px; background-color: black;color: white;">
+                                        <a href="#" style="color: white;"><b>สั่งอาหาร</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>เรียกแท็กซี่</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>ส่งพัสดุ</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>แมสเซนเจอร์</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>สั่งของสะดวกซื้อ</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>สั่งของซูเปอร์</b></a>&emsp;|&emsp;
+                                        <a href="#" style="color: white;"><b>พาร์ทเนอร์ของเรา</b></a>
+                                    </div>
+                                </div>
+                                <a class="nav-link" href="#"><b>ศูนย์ช่วยเหลือ <i class="fas fa-angle-down"></i></b></a>
+                            </li>
+                            &emsp;&emsp;
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>คำถามยอดนิยม</b></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- LINE MAN สั่งอาหารจากร้านเด็ดทั่วกรุงเทพ -->
+    <div style="background-color: #f3f3f4;" class="d-flex">
+        <div class="container p-4">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h2 class="head h-1">LINE MAN</h2>
+                    <h2 class="head h-2">สั่งอาหารจากร้านเด็ดทั่วกรุงเทพ</h2>
+                    <p class="title title-content">รวมเมนูอาหารจาก 100,000 ร้าน พร้อม Delivery ถึงบ้าน</p>
+                    <a href="index.html" class="btn" title="สั่งอาหารเลย">สั่งอาหารเลย</a><br><br><br>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="align-self-center ratio ratio-16x9">
+                        <iframe width="560px" height="315px" src="https://www.youtube.com/embed/vsVFYd8pkgM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- LINE MAN สั่งอาหารจากร้านเด็ดทั่วกรุงเทพ -->
+
+    <!-- content รูป -->
+    <div class="container p-4" ">
+
+        <!-- 1 -->
+        <div class=" row">
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="service_order_1.png" width="300px" height="300px" class="align-self-center img-fluid">
+        </div>
+
+        <div class="col-md-6 align-self-center">
+            <p class="title title-head">
+                สั่งอาหารจากร้านเด็ดที่คัดสรรมาจาก 100,000 ร้านอาหาร
+            </p>
+            <p class="title title-content">
+                พร้อมเมนูให้เลือกเยอะที่สุด การันตีความอร่อยโดย Wongnai ไม่ต้องเสียเวลาต่อคิว
+                หรือฝ่ารถติดไปกินอีกต่อไป ให้ไลน์แมนทำแทนคุณ พร้อม Delivery จัดส่งถึงที่ แค่นอนอยู่บ้านก็ได้กิน
+            </p>
+        </div>
+    </div>
+    <!-- 1 -->
+    <br><br>
+    <!-- 2 -->
+    <div class="row">
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="service_order_2.png" width="300px" class="align-self-center img-fluid">
+        </div>
+        <div class="col-md-6 align-self-center">
+            <p class="title title-head">
+                ค่าส่งพิเศษ สำหรับร้านค้าพาร์ทเนอร์ใกล้บ้านคุณ
+            </p>
+            <p class="title title-content">
+                ไม่ต้องเสียค่าน้ำมัน ไม่เสียเวลา และไม่มีปัญหาที่จอดรถ สั่งเลย ให้ LINE MAN
+                เป็นผู้ช่วยเบอร์หนึ่งตัวจริงของคุณ
+            </p>
+        </div>
+    </div>
+    <!-- 2 -->
+
+    <!-- 3 -->
+    <div class="row">
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="service_order_3.png" width="300px" class="align-self-center img-fluid">
+        </div>
+        <div class="col-md-6 align-self-center">
+            <p class="title title-head">
+                สะดวกทุกช่องทางการชำระเงิน
+            </p>
+            <p class="title title-content">
+                ทั้งชำระเงินสดกับ LINE MAN เมื่อได้รับอาหาร หรือจะชำระผ่าน Rabbit LINE Pay เพื่อตัดบัตรเครดิต
+                พร้อมรับโปรโมชั่นพิเศษ
+            </p>
+        </div>
+    </div>
+    <!-- 3 -->
+    </div>
+    <!-- content รูป -->
+
+    <hr style="background-color: #dbe3e7;">
+
+
+    <!-- before download -->
+    <div class="d-flex justify-content-center before-dow">
+        <div class="text-center">
+            <p class="pro">
+                <b>โปรโมชันสั่งอาหารกับ LINE MAN</b><br>
+                รับส่วนลดสูงสุด 60% +โค้ดส่วนลดเพิ่มอีก สูงสุด 50.-
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img src="service_order_4.png" width="300px" class="img-fluid">
+                </div>
+                <br><br>
+                <div class="d-flex justify-content-center">
+                    <div style="width: 440px;">
+                        <p class="pro-content">
+                            💚 LINE MAN ให้โปรกระหน่ำ คุ้มคนละชั้น ⚡️ ลดสูงสุด 60% คุ้มไปอีกชั้นด้วยโค้ดลดเพิ่มอีกสูงสุด
+                            80.-*
+                            เลือกร้านที่ใช่ ดีลที่ชอบเองเลย กับร้าน Pepper Lunch, กาแฟพันธุ์ไทย, Chester’s, Katsuya,
+                            Mister
+                            Donut, Texas Chicken, Choongman Chicken, KFC, McDonald’s, MK, Sizzler, Swensen’s และอีกกว่า
+                            500+
+                            โปรโมชันตลอดเดือน 👀<br>
+                            <a href="index.html" class="before-dow-a" target="_blank">สั่งเลย!</a><br>
+                            ระยะเวลาโปรโมชัน : 2 – 30 พ.ย. 64
+                            ค่าส่ง 0 บาท* *เมื่อสั่งกับร้านที่ร่วมรายการ ในระยะทางที่กำหนด
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vsVFYd8pkgM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <a href="https://lineman.line.me/how-to-use-co-payment/?is_retargeting=true&shortlink=f2c47488&c=OL--Website--Food--AWN--AWN--All--ALL--CAMHEROPRO&af_ad=CAMHEROPRO--Service--October--ALL--Single--PRT&pid=Website&af_click_lookback=1d&af_channel=Service"
+                        target="_blank" class="button-pro" title="ดูโปรโมชันทั้งหมด">ดูโปรโมชั่นร้านอาหารทั้งหมด</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- before download -->
+    <br>
+
+    <!-- download -->
+    <div style="background-color: #eeeeee;" class="dow1">
+        <div class="container-fluid p-4">
+
+            <div class="d-flex bd-highlight mb-3">
+                <div class="p-2 bd-highlight align-self-center"><img src="lineman-icon.png" class="img-fluid"
+                        width="100px"></div>
+                <div class="p-2 bd-highlight">
+                    <p style="color: #444444; font-size: 20px;"><b>ดาวน์โหลดแอปฯ LINE MAN</b></p>
+                    <p style="color: #444444; font-size: 14px;">แอปพลิเคชั่น LINE MAN ตอบโจทย์ทุกความต้องการ ด้วย 5
+                        บริการหลัก <br> ระดับมืออาชีพที่จะคอยช่วยเหลือได้ทุกเมื่อที่คุณต้องการ</p>
+                </div>
+                <div class="ms-auto p-2 bd-highlight align-self-center">
+                    <a href="https://apps.apple.com/TH/app/id1076238296?mt=8" class="btn-dow1" style="font-size: 16px;"
+                        target="_blank">
+                        <b><i class="fab fa-apple"></i> AppStore</b>
+                    </a>
+                    &emsp;
+                    <a href="https://shortest.link/1Kw2" class="btn-dow1" style="font-size: 16px;" target="_blank">
+                        <b><i class="fab fa-google-play"></i> Google Store</b>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- download -->
+
+    <!-- download after -->
+    <div style="background-color: #282424;" class="dow2">
+        <div class="container-fluid p-4">
+
+            <div class="">
+                <p style="color: white; font-size: 14px;"><b>LINE MAN is available on</b></p>
+                <div class="d-flex">
+                    <a href="https://apps.apple.com/TH/app/id1076238296?mt=8" target="_blank"><img
+                            src="app-store-badge.png" alt="" width="191px" class="img-fluid"></a>
+                    &ensp;
+                    <a href="https://shortest.link/1Kw2" target="_blank"><img src="go.png" alt="" width="191px"
+                            class="img-fluid" style="border-radius: 10px;"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- download after -->
+
+
+    <!-- footter -->
+    <div style="background-color: #282424; border-bottom: 1px solid white;">
+        <div class="container-fluid p-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="lineman-icon-white.png" alt="" width="40px" height="40px"><br><br>
+                    <p style="color: white; font-size: 14px;"><b>ติดตามเรา</b></p>
+                    <a class="commy" href="https://twitter.com/lineman_th?lang=en" style="font-size: 20px;"
+                        target="_blank"><i class="fab fa-twitter"></i></a>&emsp;
+                    <a class="commy" href="https://www.facebook.com/linemanth/" style="font-size: 20px;"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a><br><br>
+                </div>
+                <div class="col-md-2">
+                    <p style="color: white; font-size: 14px;"><b>บริการ</b></p><br>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">สั่งซื้ออาหาร</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">เรียกแท็กซี่</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">ส่งพัสดุ</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">สั่งของสะดวกซื้อ</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">แมสเซนเจอร์</a></b></p>
+                </div>
+                <div class="col-md-2">
+                    <p style="color: white; font-size: 14px;"><b>พาร์ทเนอร์</b></p><br>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">ร้านอาหาร</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">ร่วมเป็นพันธมิตรทางธุรกิจ</a></b></p>
+                </div>
+                <div class="col-md-2">
+                    <p style="color: white; font-size: 14px;"><b>ศูนย์ช่วยเหลือ</b></p><br>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">คำถามยอดนิยม</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">สั่งซื้ออาหาร</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">เรียกแท็กซี่</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">ส่งพัสดุ</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">แมสเซนเจอร์</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">สั่งของสะดวกซื้อ</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">สั่งของซูเปอร์</a></b></p>
+                    <p style="color: white; font-size: 14px;"><b><a href="#" class="commy">พาร์ทเนอร์ของเรา</a></b></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="background-color: #282424; border-bottom: 1px solid white;">
+        <div class="container-fluid p-4">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="https://terms2.line.me/lineman_terms_2?lang=th" target="_blank" style="color: white; font-size: 15.35px;">TERMS & CONDITIONS</a><br><br>
+                </div>
+                <div class="col-md-8">
+                    <a href="https://terms2.line.me/lineman_privacy_2?lang=th" target="_blank" style="color: white; font-size: 15.35px;">PRIVACY POLICY</a><br><br>
+                </div>
+
+                <div class="col-md-2">
+                    <p style="color: white;"><b><i class="far fa-copyright" style="font-size: 10px;"></i> LINE CORP 2019</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footter -->
+
+
+
+
+
+</body>
+
+</html>

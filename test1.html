@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup chat</title>
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap 5 -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+
+    <!-- awe -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- awe -->
+
+    <style>
+        textarea::-webkit-input-placeholder {
+            color: #c4ccd4;
+        }
+
+        textarea:-moz-placeholder {
+            /* Firefox 18- */
+            color: #c4ccd4;
+        }
+
+        textarea::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #c4ccd4;
+        }
+
+        textarea:-ms-input-placeholder {
+            color: #c4ccd4;
+        }
+
+        textarea::placeholder {
+            color: #c4ccd4;
+        }
+
+        .chat1 {
+            border-radius: 50px;
+        }
+
+        .arrow {
+            color: black;
+        }
+
+        .arrow:hover {
+            color: black;
+        }
+
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+
+        /* Button used to open the chat form - fixed at the bottom of the page */
+        .open-button {
+            /* background-color: #555;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          opacity: 0.8;
+          width: 280px; */
+            background-color: #16c057;
+            border: none;
+            font-size: 15px;
+            padding: 13px 22px;
+            font-weight: bold;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 107px;
+            border-radius: 40px;
+        }
+
+        .chat1 {
+            height: 540px;
+            width: 345px;
+        }
+
+        .cancel {
+            padding: 0;
+            position: relative;
+            top: -5px;
+        }
+
+        .box1 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+        }
+
+        .support {
+            box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+        }
+
+        .texta {
+            border: 1px solid #e2e5e6;
+            border-radius: 5px;
+            height: 60px;
+        }
+
+        .texta:hover {
+            border: 1px solid black;
+            transition: 0.6s;
+        }
+
+        /* The popup chat - hidden by default */
+        .chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            border-radius: 10px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 0.2);
+        }
+
+        .box-texta {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Popup Chat Window</h2>
+    <p>Click on the button at the bottom of this page to open the chat form.</p>
+    <p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.
+    </p>
+
+    <button class="open-button" id="open-btn" onclick="openForm()"><i class="far fa-comment"
+            style="font-size: 18px;"></i>&ensp;Chat</button>
+
+    <div class="chat-popup" id="myForm">
+
+        <div class="chat1">
+            <div class="d-flex justify-content-end box1"
+                style="background-color: #16c057; font-size: 15px; font-weight: bold; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <div class="align-self-center">
+                    LMWN Customer Support&ensp;<a class="arrow"
+                        href="https://static.zdassets.com/web_widget/latest/liveChat.html?v=10#key=lmwn.zendesk.com&settings=JTdCJTIyd2ViV2lkZ2V0JTIyJTNBJTdCJTIyY2hhdCUyMiUzQSU3QiUyMnRpdGxlJTIyJTNBbnVsbCUyQyUyMm1lbnVPcHRpb25zJTIyJTNBJTdCJTIyZW1haWxUcmFuc2NyaXB0JTIyJTNBdHJ1ZSU3RCUyQyUyMmRlcGFydG1lbnRzJTIyJTNBJTdCJTdEJTJDJTIycHJlY2hhdEZvcm0lMjIlM0ElN0IlMjJkZXBhcnRtZW50TGFiZWwlMjIlM0FudWxsJTJDJTIyZ3JlZXRpbmclMjIlM0FudWxsJTdEJTJDJTIyb2ZmbGluZUZvcm0lMjIlM0ElN0IlMjJncmVldGluZyUyMiUzQW51bGwlN0QlMkMlMjJjb25jaWVyZ2UlMjIlM0ElN0IlMjJhdmF0YXJQYXRoJTIyJTNBbnVsbCUyQyUyMm5hbWUlMjIlM0FudWxsJTJDJTIydGl0bGUlMjIlM0FudWxsJTdEJTdEJTJDJTIyY29sb3IlMjIlM0ElN0IlMjJhcnRpY2xlTGlua3MlMjIlM0ElMjIlMjIlMkMlMjJidXR0b24lMjIlM0ElMjIlMjIlMkMlMjJoZWFkZXIlMjIlM0ElMjIlMjIlMkMlMjJsYXVuY2hlciUyMiUzQSUyMiUyMiUyQyUyMmxhdW5jaGVyVGV4dCUyMiUzQSUyMiUyMiUyQyUyMnJlc3VsdExpc3RzJTIyJTNBJTIyJTIyJTJDJTIydGhlbWUlMjIlM0FudWxsJTdEJTdEJTdE&&locale=en-us&title=Web%20Widget%20Live%20Chat"
+                        target="_blank"><i class="fas fa-location-arrow"></i></a> &ensp;<button type="button"
+                        class="btn cancel" onclick="closeForm()"><i class="far fa-window-minimize"></i></button>
+                </div>
+            </div>
+
+            <div class="support d-flex p-2">
+                <div class="align-self-center" style="font-size: 20px;">
+                    <i class="fas fa-concierge-bell"></i>
+                </div>
+                &emsp;
+                <div class="align-self-center" style="font-size: 14px;">
+                    <span><b>Live Support</b></span><br>Customer Support
+                </div>
+            </div>
+
+            <!-- ข้อความ -->
+            <div class="scmy" style="height: 325px; overflow: auto; padding: 10px 20px;" id="myDiv">
+
+                <div class="d-flex">
+                    <div class="align-self-end" style="font-size: 30px; color: white;">
+                        <i class="fas fa-user-circle"></i>
+                    </div>&emsp;
+                    <div class="align-self-end box-texta"
+                        style="background-color: #e9ebed; font-size: 15px; padding-top: 5px; padding-left: 10px;padding-right: 5px;">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi ipsam, facilis quam
+                            dicta culpa, rerum esse alias aspernatur molestias perferendis! Nam recusandae officiis
+                            soluta, eos quia maxime quibusdam esse!</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="d-flex">
+                    <div class="align-self-end" style="font-size: 30px; color: white;">
+                        <i class="fas fa-user-circle"></i>
+                    </div>&emsp;
+                    <div class="align-self-end box-texta"
+                        style="background-color: #e9ebed; font-size: 15px; padding-top: 5px; padding-left: 10px;padding-right: 5px;">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi ipsam, facilis quam
+                            dicta culpa, rerum esse alias aspernatur molestias perferendis! Nam recusandae officiis
+                            soluta, eos quia maxime quibusdam esse!</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="d-flex">
+                    <div class="align-self-end" style="font-size: 30px; color: white;">
+                        <i class="fas fa-user-circle"></i>
+                    </div>&emsp;
+                    <div class="align-self-end box-texta"
+                        style="background-color: #e9ebed; font-size: 15px; padding-top: 5px; padding-left: 10px;padding-right: 5px;">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi ipsam, facilis quam
+                            dicta culpa, rerum esse alias aspernatur molestias perferendis! Nam recusandae officiis
+                            soluta, eos quia maxime quibusdam esse!</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="d-flex">
+                    <div class="align-self-end" style="font-size: 30px; color: #777777;">
+                        <i class="fas fa-user-circle"></i>
+                    </div>&emsp;
+                    <div class="align-self-end box-texta"
+                        style="background-color: #e9ebed; font-size: 15px; padding-top: 5px; padding-left: 10px;padding-right: 5px;">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sequi ipsam, facilis quam
+                            dicta culpa, rerum esse alias aspernatur molestias perferendis! Nam recusandae officiis
+                            soluta, eos quia maxime quibusdam esse!</p>
+                    </div>
+                </div>
+                <!-- ข้อความ -->
+
+
+
+            </div>
+
+            <div class="p-2 d-flex">
+                <textarea style="width: 100%; height: 70px;" class="texta p-2" placeholder="Type a message here..."
+                    name="msg" required></textarea>
+            </div>
+
+            <div class="d-flex justify-content-between" style="padding: 0px 10px;">
+                <div style="font-size: 12px; color: #777777;">
+                    zendesk
+                </div>
+                <div style="font-size: 12px; color: #777777;">
+                    <i class="fas fa-door-open"></i>&ensp;
+                    <i class="fas fa-paperclip"></i>&ensp;
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+
+            <!-- <button type="submit" class="btn">Send</button> -->
+            <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+        </div>
+
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            document.getElementById("open-btn").style.display = "none";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById("open-btn").style.display = "block";
+        }
+        var objDiv = document.getElementById("myDiv");
+        objDiv.scrollTop = objDiv.scrollHeight;
+
+    </script>
+</body>
+
+</html>

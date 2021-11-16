@@ -1,0 +1,286 @@
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Kanit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* navbar */
+
+.navcom {
+    padding: 25px 10px 25px 10px;
+}
+
+.navbar-nav a {
+    color: black;
+}
+
+.nav-bar-list {
+    position: relative;
+    left: 120px;
+    font-size: 15px;
+}
+
+.content {
+    /* position: absolute; */
+    display: none;
+}
+
+.ser * {
+    color: white;
+}
+
+.nav-item :hover {
+    color: #0fc862;
+}
+
+.nav-item:hover .content {
+    display: block;
+}
+
+.content:hover {
+    display: block;
+}
+
+.content:hover+.nav-link {
+    color: #0fc862;
+}
+/* navbar */
+
+/* download */
+.btn-dow1 {
+    padding: 15px 70px 15px 70px;
+    background-color: #32394c;
+    color: white;
+    border-radius: 40px;
+}
+.btn-dow1:hover {
+    color: white;
+}
+.dow2 {
+    display: none;
+}
+/* download */
+
+
+/* footter */
+.commy {
+    color: white;
+}
+.commy:hover{
+    color: #50d0ac
+    ;
+}
+/* footter */
+
+
+/* red1 */
+
+.red1 {
+    font-size: 31px;
+}
+
+.red1:hover {
+    text-decoration:underline;
+    text-decoration-color: #1ca4bc;
+}
+/* red1 */
+
+
+/* main */
+.mainp {
+    padding-left: 12vw;
+}
+.main {
+    color: white;
+}
+.main1 {
+    font-size: 70px;
+}
+.main2 {
+    font-size: 31px;
+}
+.maina {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+}
+.br {
+    display: block;
+    margin-bottom: -0.5em;
+}
+.maina2 {
+    color: #32394c;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 40px;
+    display: none;
+}
+.maina2:hover {
+    color: #32394c;
+}
+/* main */
+
+/* กล่องดำ */
+.boxb {
+    font-size: 31px;
+}
+/* กล่องดำ */
+
+/* 6row */
+.head {
+    color: #1b1b4f;
+    font-size: 50px;
+    font-weight: bold;
+}
+.con1 {
+    font-weight: bold;
+    color: #10c157;
+}
+.con2 {
+    color: #343a4d;
+}
+.content1 {
+    font-size: 31px;
+}
+.btn-forma {
+    background-color: #10c157;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    font-size: 30.5px;
+    border-radius: 40px;
+}
+.btn-forma:hover {
+    background-color: #dcdcdc;
+    color: #5e5e5e;
+    transition: 0.4s;
+}
+/* 6row */
+
+/* เพิ่ม */
+.backgroud{
+    display: none;
+    height: 84.5vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #f8f8f8;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.backgroud .menu li {
+    font-size: 16px;
+    padding: 15px 20px;
+    list-style-type: none;
+}
+
+.drop{
+    background-color: rgba(68, 68, 68, 0.055);
+}
+
+.drop-item{
+    font-size: 14px;
+    color:rgb(0, 0, 0) !important;
+}
+
+ .drop-item-1{
+    display: none;
+}
+
+.drop-item-1.active{
+    display: block;
+}
+
+.drop-item-2{
+    display: none;
+}
+
+.drop-item-2.active{
+    display: block;
+}
+
+.drop-item-3{
+    display: none;
+}
+
+.drop-item-3.active{
+    display: block;
+}
+.select-test{
+    color:#007565 !important;
+}
+
+.select-test:hover{
+    color: #000000 !important;
+}
+
+.test{
+    color:rgb(0, 0, 0)!important;
+}
+
+.test:hover{
+    color: rgb(0, 0, 0) !important;
+}
+
+.bars{
+    display: block;
+}
+
+@media all and (min-width: 990px){
+    .toggle{
+        display: none;
+    }
+}
+/* เพิ่ม */
+
+@media only screen and (max-width: 780px) {
+    .red1 {
+        font-size: 16.5px;
+    }
+    .main1  {
+        font-size: 20px;
+    }
+    .main2 {
+        font-size: 12.5px;
+    }
+    .maina {
+        display: none;
+    }
+    .maina2 {
+        display: block;
+    }
+    
+    .boxb {
+        font-size: 20px;
+    }
+    .head {
+        font-size: 25px;
+    }
+    .content1 {
+        font-size: 20px;
+    }
+    .btn-forma {
+        padding: 5px 40px 5px 40px;
+        font-size: 15.25px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .dow1 {
+        display: none;
+    }
+    .dow2 {
+        display: block;
+        border-bottom: 1px solid white;
+    }
+}

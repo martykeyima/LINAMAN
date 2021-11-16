@@ -1,0 +1,282 @@
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Kanit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* navbar */
+
+.navcom {
+    padding: 25px 10px 25px 10px;
+}
+
+.navbar-nav a {
+    color: black;
+}
+
+.nav-bar-list {
+    position: relative;
+    left: 120px;
+    font-size: 15px;
+}
+
+.content {
+    /* position: absolute; */
+    display: none;
+}
+
+.ser * {
+    color: white;
+}
+
+.nav-item :hover {
+    color: #0fc862;
+}
+
+.nav-item:hover .content {
+    display: block;
+}
+
+.content:hover {
+    display: block;
+}
+
+.content:hover+.nav-link {
+    color: #0fc862;
+}
+/* navbar */
+
+
+/* LINE MAN สั่งอาหารจากร้านเด็ดทั่วกรุงเทพ */
+.head {
+    color: #1b1b4f;
+    font-weight: bold;
+    font-size: 50px;
+}
+.title {
+    font-size: 31px;
+}
+.title-content {
+    color: #3a4a4d;
+}
+
+.title-head {
+    color: #10c157;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #10c157;
+    color: white;
+    font-size: 30.5px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 45px;
+    cursor: default;
+}
+
+.btn:hover {
+    background-color: #dcdcdc;
+    color: #5e5e5e;
+    transition: 0.3s;
+}
+/* LINE MAN สั่งอาหารจากร้านเด็ดทั่วกรุงเทพ */
+
+
+/* before download*/
+
+.pro {
+    font-size: 31px;
+    color: #343a4d;
+    line-height: 40px;
+}
+
+.pro-content {
+    font-size: 20px;
+}
+
+.before-dow-a {
+    color: #52eac8;
+}
+.before-dow-a:hover{
+    color: #1da6b8;
+    text-decoration: underline;
+}
+
+.button-pro {
+    background-color: #32394c;
+    color: white;
+    font-weight: bold;
+    font-size: 30.5px;
+    padding: 20px 120px 20px 120px;
+    cursor: default;
+    border-radius: 40px;
+}
+.button-pro:hover{
+    color: white;
+}
+/* before download*/
+
+
+/* download */
+.btn-dow1 {
+    padding: 15px 70px 15px 70px;
+    background-color: #32394c;
+    color: white;
+    border-radius: 40px;
+}
+.btn-dow1:hover {
+    color: white;
+}
+.dow2 {
+    display: none;
+}
+/* download */
+
+
+/* footter */
+.commy {
+    color: white;
+}
+.commy:hover{
+    color: #50d0ac
+    ;
+}
+/* footter */
+
+
+.text-cen {
+    font-size: 35px;
+    color: #1b1b4f;
+    font-weight: bold;
+}
+
+/* เพิ่ม */
+.backgroud{
+    display: none;
+    height: 84.5vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #f8f8f8;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.backgroud .menu li {
+    font-size: 16px;
+    padding: 15px 20px;
+    list-style-type: none;
+}
+
+.drop{
+    background-color: rgba(68, 68, 68, 0.055);
+}
+
+.drop-item{
+    font-size: 14px;
+    color:rgb(0, 0, 0) !important;
+}
+
+ .drop-item-1{
+    display: none;
+}
+
+.drop-item-1.active{
+    display: block;
+}
+
+.drop-item-2{
+    display: none;
+}
+
+.drop-item-2.active{
+    display: block;
+}
+
+.drop-item-3{
+    display: none;
+}
+
+.drop-item-3.active{
+    display: block;
+}
+.select-test{
+    color:#007565 !important;
+}
+
+.select-test:hover{
+    color: #000000 !important;
+}
+
+.test{
+    color:rgb(0, 0, 0)!important;
+}
+
+.test:hover{
+    color: rgb(0, 0, 0) !important;
+}
+
+.bars{
+    display: block;
+}
+
+@media all and (min-width: 990px){
+    .toggle{
+        display: none;
+    }
+}
+/* เพิ่ม */
+
+
+@media only screen and (max-width: 769px) {
+    .head {
+        font-size: 25px;
+    }
+
+    .title{
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 30px 10px 30px;
+    }
+    .navcom {
+        padding: 5px 5px 5px 10px;
+    }
+    
+    .pro {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .pro-content {
+        font-size: 15px;
+    }
+    .button-pro {
+        font-size: 15.25px;
+        padding: 10px 60px 10px 60px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .dow1 {
+        display: none;
+    }
+    .dow2 {
+        display: block;
+        border-bottom: 1px solid white;
+    }
+}
+

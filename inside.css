@@ -1,0 +1,108 @@
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+a {
+    color: #444444;
+    text-decoration: none;
+}
+
+
+.top {
+    border-top: 7px solid #0fc862;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 0.2);
+}
+
+/* box เขียว */
+.pic {
+    position: absolute;
+    right: 300px;
+    top: 200px;
+}
+.b1 {
+    font-size: 14px;
+}
+.b2 {
+    font-size: 24px;
+}
+/* box เขียว */
+
+hr {
+    background-color: #bbc6cb;
+}
+
+li {
+    font-size: 14px;
+}
+.hover:hover {
+    color: #0fc862;
+}
+.accordion-header {
+    display: none;
+}
+
+ul.ccc {
+    list-style: none;
+  }
+
+ul.ccc li::before {
+    content: "\2022";
+    color: black;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+.lock1:hover .icon-unlock1,
+.lock1 .icon-lock1 {
+    display: none;
+    color: #0fc862;
+}
+.lock1:hover .icon-lock1 {
+    display: inline;
+}
+
+.lock2:hover .icon-unlock2,
+.lock2 .icon-lock2 {
+    display: none;
+    color: red;
+}
+.lock2:hover .icon-lock2 {
+    display: inline;
+}
+
+.ques-2 {
+    border-top: 6px solid #0fc862;
+}
+
+.btntop {
+    display: none;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    color: #444444;
+}
+
+@media only screen and (max-width: 800px) {
+    .pic {
+        right: 10px;
+    }
+    .b2 {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .accordion-header{
+        display: block;
+    }
+    .acc {
+        display: none;
+    }
+
+    .btntop {
+        display: block;
+    }
+}

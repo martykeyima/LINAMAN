@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help_order</title>
+
+    <!-- ใส่ icon ของ title -->
+    <link rel="icon" href="lineman-icon.png" type="image/icon type">
+    <!-- ใส่ icon ของ title -->
+
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap 5 -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+
+    <!-- awe -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- awe -->
+
+    <style>
+        body {
+            /* font-family: 'Montserrat', sans-serif; */
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .ques {
+            border-top: 8px solid #0fc862;
+            border-radius: 8px;
+        }
+        a {
+            color: #444444;
+            text-decoration: none;
+        }
+
+
+        .top {
+            border-top: 7px solid #0fc862;
+            box-shadow: 0 1px 8px rgb(0 0 0 / 0.2);
+        }
+
+        .ques a {
+            color: #444444;
+        }
+
+        .hover:hover{
+            color: #0fc862;
+        }
+        /* .ques:hover a {
+            color: #0fc862;
+        } */
+
+        .footter-line a {
+            color: #777777;
+            font-size: 14px;
+        }
+
+        ::placeholder {
+            color: #777777;
+        }
+
+        .search {
+            white-space: nowrap;
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+        }
+
+        .pic {
+            position: absolute; right: 300px; top: 200px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .pic {
+                right: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-start p-4 top">
+        <span class="">
+            <a href="#" title="Home"><img src="lineman-logo.png" alt="" class="img-fluid" width="114px"></a>
+        </span>
+    </div>
+
+    <!-- search -->
+    <div class="container-fluid">
+
+        <div class="d-flex justify-content-center p-3">
+            <span class="align-self-center p-3 search" style="width: 40rem;">
+                <span style="background-color: #f8f4f4; padding: 10px; border-radius: 8px;">
+                    <i class="fas fa-search" style="color: #777777;"></i> <input
+                        placeholder="ค้นหาด้วยคีเวิร์ดเช่น ลืมของ,ราคา,ยกเลิก " type="text"
+                        style="background-color: #f8f4f4; border: none; outline: none; width: 90%;">
+                </span>
+            </span>
+        </div>
+    </div>
+    <!-- search -->
+
+    <!-- box เขียว-->
+    <div style="height: 150px; background-color: #0fc862;">
+        <div class="container">
+            <div class="d-flex justify-content-start">
+                <span class="align-self-end text-white" style="padding-top: 50px;position: relative;">
+                    <b style="font-size: 18px;">คำถามและคำตอบของ</b> <br>
+                    <b style="font-size: 25px;">สั่งซื้ออาหาร</b>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- box เขียว-->
+
+    <!-- box -->
+    <div style="height: 75px; border-bottom: 1px solid #bbc6cb;">
+        <div class="container">
+            <div class="d-flex justify-content-start">
+                <span class="align-self-end"
+                    style="padding-top: 30px; position: relative; left: -60px; font-size:20px;">
+                    <a   style="color: #444444; font-weight: 100;" href="#">LINE MAN x Wongnai</a> <span
+                        style="color: #777777;"> > สั่งซื้ออาหาร</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- box -->
+
+    <!-- ques -->
+    <div class="container" style="width: 1000px;">
+        <br><br><br>
+        <!-- row 1 -->
+        <div class="row">
+            <h1>สั่งซื้ออาหาร</h1>
+            <div class="col-xl-6">
+                <div class="p-4 ques" style="width: 450px; height: auto; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <h2 class="head-2" style="font-size: 16px;">LINE MAN K+</h2>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a  class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-xl-6">
+
+                <div class="p-4 ques" style="width: 450px; height: auto; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <h2 class="head-2" style="font-size: 16px;">LINE MAN K+</h2>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- row 1 -->
+
+        <br>
+        <!-- row 2 -->
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="p-4 ques" style="width: 450px; height: auto; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <h2 class="head-2" style="font-size: 16px;">LINE MAN K+</h2>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a class="hover"href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-xl-6">
+
+                <div class="p-4 ques" style="width: 450px; height: auto; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <h2 class="head-2" style="font-size: 16px;">LINE MAN K+</h2>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><a class="hover" href="">
+                                <span class="fa-li"><i style="color: #0fc862;" class="far fa-comment-dots"></i></span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic doloremque facilis
+                                eligendi molestias tenetur ducimus nam cumque perferendis! Quos architecto alias
+                                molestias natus minus pariatur? Error maiores impedit unde quidem?
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- row 2 -->
+    </div>
+    <!-- ques -->
+
+    <hr style="color: #bbc6cb;">
+
+
+
+    <!-- footter -->
+    <div class="container">
+        <div class="d-flex justify-content-between mb-3">
+            <div class="p-2">
+                <a href="#" style="color: #777777;" title="Home">
+                    LINE MAN x Wongnai
+                </a>
+            </div>
+
+            <div class="p-2">
+                <div class="dropup">
+                    <button type="button" data-bs-toggle="dropdown" style="border: none; background-color: white;">
+                        English (US) <i class="fas fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">ไทย</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footter -->
+
+
+    <!-- photo -->
+    <img class="pic" src="lineman-food.png" alt="" width="170px" height="auto">
+    <!-- photo -->
+</body>
+
+</html>

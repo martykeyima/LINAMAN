@@ -1,0 +1,182 @@
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color:#0fc862;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color:#25aa61 !important;
+}
+
+.navbar-nav a {
+    color: black;
+}
+
+.nav-bar-list {
+    position: relative;
+    left: 120px;
+    font-size: 15px;
+}
+
+.content {
+    /* position: absolute; */
+    display: none;
+}
+
+.ser * {
+    color: white;
+}
+
+.nav-item :hover {
+    color: #0fc862;
+}
+
+.nav-item:hover .content {
+    display: block;
+}
+
+.content:hover {
+    display: block;
+}
+
+.content:hover+.nav-link {
+    color: #0fc862;
+}
+.btn {
+    background-color: #0fc862;
+    border: none;
+    color: white;
+    border-radius: 40px;
+    font-size: 28px;
+}
+
+.btn:hover {
+    background-color: #dcdcdc;
+    color: #5e5e5e;
+    transition: 0.3s;
+}
+
+
+.btn-download {
+    color: white;
+    border-radius: 40px;
+    width: 228px;
+    padding: 15px;
+    background-color: #383c4c;
+}
+
+.btn-breakpoint {
+    border-radius: 15px;
+}
+
+.download-after {
+    display: none;
+}
+/* เพิ่ม */
+.backgroud{
+    display: none;
+    height: 84.5vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #f8f8f8;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.backgroud .menu li {
+    font-size: 16px;
+    padding: 15px 20px;
+    list-style-type: none;
+}
+
+.drop{
+    background-color: rgba(68, 68, 68, 0.055);
+}
+
+.drop-item{
+    font-size: 14px;
+    color:rgb(0, 0, 0) !important;
+}
+
+ .drop-item-1{
+    display: none;
+}
+
+.drop-item-1.active{
+    display: block;
+}
+
+.drop-item-2{
+    display: none;
+}
+
+.drop-item-2.active{
+    display: block;
+}
+
+.drop-item-3{
+    display: none;
+}
+
+.drop-item-3.active{
+    display: block;
+}
+.select-test{
+    color:#007565 !important;
+}
+
+.select-test:hover{
+    color: #000000 !important;
+}
+
+.test{
+    color:rgb(0, 0, 0)!important;
+}
+
+.test:hover{
+    color: rgb(0, 0, 0) !important;
+}
+
+.bars{
+    display: block;
+}
+
+@media all and (min-width: 990px){
+    .toggle{
+        display: none;
+    }
+}
+/* เพิ่ม */
+
+@media only screen and (max-width: 990px) {
+    .download-before {
+        display: none;
+    }
+
+    .download-after {
+        display: block;
+    }
+}
+
+/* footter */
+.commy {
+    color: white;
+}
+.commy:hover{
+    color: #50d0ac
+    ;
+}
+/* footter */
